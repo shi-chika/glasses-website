@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <%- include('./layout/head'); -%>
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+    <section class="main-banner" >
+      <div class="container main-banner-txt">
+          <p>Promise-Desert 2020 早春系列</p>
+          <p>看得清，才能看得遠</p>
+          <a href="#">立即購買</a>
+      </div>
+    </section>
+    <section class="service p-tb-80">
+      <div class="container service-group">
+          <h2>用專業的心，做專業的事</h2>
+          <div class="service-items">
+            <div class="service-item">
+              <div class="icon"><img src="/assets/images/icon1.png" alt="" width="80px" height="80px"></div>
+              <p>單一價格</p>
+              <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+            </div>
+            <div class="service-item">
+              <div class="icon"><img src="/assets/images/icon2.png" alt="" width="80px" height="80px"></div>
+              <p>20 分鐘即可取件</p>
+              <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
+            </div>
+            <div class="service-item">
+              <div class="icon"><img src="/assets/images/icon3.png" alt="" width="80px" height="80px"></div>
+              <p>安心售後服務</p>
+              <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+            </div>
+            <div class="service-item">
+              <div class="icon"><img src="/assets/images/icon4.png" alt="" width="80px" height="80px"></div>
+              <p>關於鏡片</p>
+              <p>使用世界知名頂級品牌,抗UV、防汙鍍膜薄型非球面鏡片。</p>
+            </div>
+          </div>
+
+      </div>
+  </section>
 
     <%- include('./layout/footer'); -%>
 

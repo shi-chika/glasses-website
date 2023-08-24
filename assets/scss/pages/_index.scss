@@ -1,3 +1,78 @@
-.index-title {
-  font-size: 100px;
+
+.main-banner{
+  background-image: url(/assets/images/home-header.png) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.main-banner-txt {
+  padding-top: 296px;
+  padding-bottom: 296px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  p{
+    font-size: 2.25rem;
+    color: $mainColor-dark;
+  }
+  a{
+    padding: 6px 12px;
+    background-color:$mainColor;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  
+}
+.main-banner-txt p+p{
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+// 專業的心
+.service{
+  background-color: $mainColor-light;
+  color:$mainColor-dark;
+  h2{
+    @include title1;
+    margin-bottom: 32px;
+  }
+  .service-items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .icon{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 24px;
+  }
+  p{
+    color:$mainColor-dark;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .service-item{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .icon{
+      margin-bottom: 24px;
+  
+    }
+  }
+  
+
+}
+
+
+.service-item p+p{
+  color: #000000;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 8px;
 }

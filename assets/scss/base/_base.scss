@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+  body {
+    line-height: 1.5;
+    font-family: 'Noto Sans TC', 'Roboto',sans-serif;
+    font-size: $fz-default;
+    outline: 1px solid black;
+    
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  i{
+    vertical-align: middle;
+  }
+  
+  a {
+    text-decoration: none;
+    display:block;
+    color: #ffffff;
+  }
+
+  

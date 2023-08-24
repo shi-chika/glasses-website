@@ -1,4 +1,22 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+
+header{
+  background-color:$mainColor;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  .link-bar li+li{
+    margin-left: 64px;
+  }
+  .link-bar a{
+    font-size: 1.25rem;
+    &:hover{
+      text-decoration: underline;
+    }
+    
+  }
+
 }
+
+
+
+
+
