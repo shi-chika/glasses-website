@@ -4,7 +4,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
+  @include pad(){
+    background-image: url(/assets/images/home-header-sm.png);
+
+  }
 }
 
 .main-banner-txt {
@@ -14,65 +17,294 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-
+  @include mobile(){
+    padding-top: 144px;
+    padding-bottom: 144px;
+  }
   p{
     font-size: 2.25rem;
     color: $mainColor-dark;
+    @include mobile(){
+      font-size: 1rem;
+    }
   }
   a{
     padding: 6px 12px;
     background-color:$mainColor;
     font-size: 1.25rem;
     font-weight: 500;
-  }
-  
+    &:hover{
+      background-color:#ffffff;
+      color:$mainColor ;
+    }
+  } 
 }
 .main-banner-txt p+p{
   font-size: 4rem;
   font-weight: 700;
+  @include mobile(){
+    font-size: 1.5rem;
+  }
 }
 
 // 專業的心
 .service{
   background-color: $mainColor-light;
   color:$mainColor-dark;
+  @include mobile (){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   h2{
     @include title1;
     margin-bottom: 32px;
+    @include mobile (){
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
   }
   .service-items{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  .icon{
-    width: 80px;
-    height: 80px;
-    margin-bottom: 24px;
-  }
-  p{
-    color:$mainColor-dark;
-    font-weight: 700;
-    font-size: 1.5rem;
-  }
-  .service-item{
-    width: 24%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     .icon{
+      width: 80px;
+      height: 80px;
       margin-bottom: 24px;
-  
+    }
+    p{
+      color:$mainColor-dark;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    .service-item{
+      width: 24%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include pad(){
+        width: 48%;
+        margin-bottom: 36px;
+      }
+      @include mobile(){
+        width: 96%;
+      }
     }
   }
-  
-
 }
-
-
 .service-item p+p{
   color: #000000;
   font-weight: 400;
   font-size: 1rem;
   margin-top: 8px;
+}
+// 經典眼鏡
+.classic-style{
+  @include mobile (){
+    padding-top: 40px;
+    padding-bottom: 16px;
+  }
+  h3{
+    @include title1;
+    @include mobile (){
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  .style-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include pad (){
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .style-item{
+    width: 32%;
+    p{
+      @include title2;
+    }
+    @include pad (){
+      width: 38%;
+      margin-bottom: 24px;
+    }
+    @include mobile (){
+      width:96% ;
+    }
+  }
+  
+}
+.co-branding-style{
+  background-image: url(/assets/images/bg1.png) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include mobile (){
+    padding-top: 40px;
+    padding-bottom: 16px;
+  }
+  h4{
+    @include title1;
+    color:#ffffff;
+    @include mobile (){
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    
+  }
+  .co-branding-group{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .co-branding-item{
+    width:50%;
+    @include pad(){
+      margin-bottom: 24px;
+    }
+    p{
+      @include title2;
+      background-color: #ffffff;
+      border: 1px solid #DEE2E6;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+    .mobile-pic{
+      display: none;
+    }
+    
+    @include mobile (){
+      width: 100%;
+      .base-pic{
+        display: none;
+      }
+      .mobile-pic{
+        display: block;
+      }
+    }
+  }
+}
+.recommend{
+  @include pad(){
+    padding-bottom: 56px;
+  }
+  @include mobile (){
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+  h5{
+    @include title1;
+    @include mobile (){
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  .recommend-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+   
+  }
+  .recommend-item{
+    width:24% ;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    @include pad(){
+      width: 48%;
+      margin-bottom: 24px;
+    }
+    @include mobile(){
+      width: 96%;
+      margin-bottom: 16px;
+    }
+  }
+  .recommend-txt{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 205px;
+   .comment{
+      margin-top: 8px;
+      flex-grow: 1;
+    }
+   .name{
+      font-weight: 500;
+    }
+    .date{
+      font-size: 14px;
+      color: #707070;
+    }
+  }
+  
+}
+.contact-us{
+  background-color:$mainColor-light;
+  @include mobile (){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  h6{
+    @include title1;
+    @include mobile (){
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  .contact-group{
+    max-width: 636px;
+    margin: 0 auto;
+    @include pad(){
+      max-width: 576px;
+    }
+    @include mobile (){
+      max-width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    p{
+      font-size: 1.25rem;
+      margin-bottom: 24px;
+      @include pad(){
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  .form-input{
+    input{
+      width: 100%;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      line-height: 36px;
+      display: block;
+    }
+    input+input{
+      line-height: 33px;
+    }
+    textarea{
+      width: 100%;
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
+  }
+  .btn{
+    text-align: center;
+    margin-top: 48px;
+    input{
+      width:416px;
+      background-color:$mainColor;
+      padding: 16px 0;
+      color: #ffffff;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+    }
+  }
+  .agree-checkbox{
+    margin: 0 4px;
+
+
+  }
 }

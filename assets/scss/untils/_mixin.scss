@@ -12,14 +12,14 @@
 @mixin title1{
     color: $mainColor-dark;
     font-size: 3rem;
-    font-weight: 700;
     text-align: center;
+    font-weight: 700;
     margin-bottom: 48px;
 }
 @mixin title2{
     color: $mainColor;
     font-size: 3rem;
     text-align: center;
-    font-style:italic;
     font-weight: 900;
+    font-style:italic;
 }
