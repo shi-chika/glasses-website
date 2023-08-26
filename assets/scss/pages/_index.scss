@@ -47,7 +47,7 @@
   }
 }
 
-// 專業的心
+// 段落2 用專業的心，做專業的事
 .service{
   background-color: $mainColor-light;
   color:$mainColor-dark;
@@ -89,15 +89,16 @@
       @include mobile(){
         width: 96%;
       }
+      p+p{
+        color: #000000;
+        font-weight: 400;
+        font-size: 1rem;
+        margin-top: 8px;
+      }
     }
   }
 }
-.service-item p+p{
-  color: #000000;
-  font-weight: 400;
-  font-size: 1rem;
-  margin-top: 8px;
-}
+
 // 經典眼鏡
 .classic-style{
   @include mobile (){
@@ -185,6 +186,7 @@
     }
   }
 }
+// 顧客推薦
 .recommend{
   @include pad(){
     padding-bottom: 56px;
@@ -239,6 +241,7 @@
   }
   
 }
+// 聯絡我們
 .contact-us{
   background-color:$mainColor-light;
   @include mobile (){
@@ -300,11 +303,13 @@
       font-weight: 700;
       cursor: pointer;
       border: none;
+      &:hover{
+        background-color:#999999;
+      }
     }
   }
+
   .agree-checkbox{
     margin: 0 4px;
-
-
   }
 }
