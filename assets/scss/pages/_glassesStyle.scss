@@ -1,0 +1,89 @@
+.product-header{
+    display: flex;
+    .product-pic{
+        width: 50%;
+    }
+    .product-pic-web{
+        @include pad(){
+            display: none;
+        }
+    }
+    .product-pic-sm{
+        display: none;
+        @include pad () {
+            display: block;
+        }    
+    }
+    img{
+        width: 100%;
+    }
+}
+.product-group{
+    @include mobile(){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+.product-title{
+    margin-bottom: 32px;
+    @include mobile(){
+        margin-bottom: 0;
+    }
+    p{
+      color: #000000;
+      font-size: 32px;
+      text-align: center;  
+      @include mobile(){
+        font-size: 24px;
+      }
+    }
+    .product-title-big{
+        font-size: 42px;
+        font-weight: 500;
+        @include mobile(){
+            font-size: 24px;
+          }
+    }
+}
+.product-items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    ul{
+        width: 32%;
+        margin-bottom: 80px;
+        @include pad(){
+            width: 48%;
+            margin-bottom: 40px;
+        }
+        @include mobile(){
+            width: 96%;
+            margin-bottom: 24px;
+        }
+    }
+    .product-txt{
+        display: flex;
+        justify-content: space-between;
+        span{
+            font-size: 24px;
+            color: #000000;
+            &+span {
+                font-weight: 500;
+                color: $mainColor;
+            }
+        }
+    }
+    .product-color span{
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        background-color: $sunglassColor1;
+        &+span{
+            background-color: $sunglassColor2;
+            margin-left: 8px;
+        }
+
+    }
+    
+}

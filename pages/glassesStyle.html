@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
+    <%- include('./layout/head'); -%>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <h1>我是about</h1>
+
+    <%- include('./layout/style-nav'); -%>
+    <section class="product-header">
+      <div class="product-pic">
+        <img class="product-pic-web" src="/assets/images/product-header-3.png" alt="">
+        <img class="product-pic-sm" src="/assets/images/product-header-sm-3.png" alt="">
+      </div>
+      <div class="product-pic">
+        <img class="product-pic-web" src="/assets/images/product-header-4.png" alt="">
+        <img class="product-pic-sm" src="/assets/images/product-header-sm-4.png" alt="">
+      </div>
+    </section>
+
+    <section class="product-group p-tb-80 container">
+      <div class="product-title">
+        <p class="product-title-big">2020 NEW COLLECTION</p>
+        <p>賽璐珞鈦金屬混合鏡框</p>
+      </div>
+      
+      <div class="product-items">
+        <ul class="product-card">
+          <li><img src="/assets/images/product-7.png" alt=""></li>
+          <li class="product-txt"><span>BJ41600S</span><span>NTD3,490</span></li>
+          <li class="product-color"><span></span><span></span></li>
+        </ul>
+        <ul class="product-card">
+          <li><img src="/assets/images/product-8.png" alt=""></li>
+          <li class="product-txt"><span>BJ41600S</span><span>NTD3,490</span></li>
+          <li class="product-color"><span></span><span></span></li>
+        </ul>
+        <ul class="product-card">
+          <li><img src="/assets/images/product-9.png" alt=""></li>
+          <li class="product-txt"><span>BJ41600S</span><span>NTD3,490</span></li>
+          <li class="product-color"><span></span><span></span></li>
+        </ul>
+        <ul class="product-card">
+          <li><img src="/assets/images/product-10.png" alt=""></li>
+          <li class="product-txt"><span>BJ41600S</span><span>NTD3,490</span></li>
+          <li class="product-color"><span></span><span></span></li>
+        </ul>
+        <ul class="product-card">
+          <li><img src="/assets/images/product-11.png" alt=""></li>
+          <li class="product-txt"><span>BJ41600S</span><span>NTD3,490</span></li>
+          <li class="product-color"><span></span><span></span></li>
+        </ul>
+        <ul class="product-card">
+          <li><img src="/assets/images/product-12.png" alt=""></li>
+          <li class="product-txt"><span>BJ41600S</span><span>NTD3,490</span></li>
+          <li class="product-color"><span></span><span></span></li>
+        </ul>
+
+      </div>
+
+    </section>
+    
+    
+    
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
