@@ -23,28 +23,27 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
-}
-.product-title{
-    margin-bottom: 32px;
-    @include mobile(){
-        margin-bottom: 0;
-    }
     p{
-      color: #000000;
-      font-size: 32px;
-      text-align: center;  
-      @include mobile(){
-        font-size: 24px;
-      }
-    }
-    .product-title-big{
-        font-size: 42px;
-        font-weight: 500;
-        @include mobile(){
+        color: #000000;
+        text-align: center;  
+        &:nth-child(1){
+            font-size: 42px;
+            font-weight: 500;
+            @include mobile(){
+                font-size: 24px;
+              }
+        }
+        &:nth-child(2){
+            font-size: 32px;
+            margin-bottom: 32px;
+            @include mobile(){
             font-size: 24px;
-          }
+            margin-bottom: 24px;
+            }
+        }
     }
 }
+
 .product-items{
     display: flex;
     justify-content: space-between;
