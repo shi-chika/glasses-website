@@ -295,10 +295,20 @@
   .btn{
     text-align: center;
     margin-top: 48px;
+    @include mobile(){
+      margin-top: 24px;
+    }
     input{
-      max-width:416px;
+      width: 65%;
+      @include pad(){
+        width: 58%;
+      }
+      @include mobile (){
+        width: 100%;
+      }
       background-color:$mainColor;
-      padding: 16px 0;
+      padding-top: 16px;
+      padding-bottom: 16px;
       color: #ffffff;
       font-weight: 700;
       cursor: pointer;
@@ -306,6 +316,7 @@
       &:hover{
         background-color:#999999;
       }
+      
     }
   }
 
